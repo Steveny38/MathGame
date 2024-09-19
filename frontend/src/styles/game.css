@@ -1,0 +1,196 @@
+
+.container_game{
+    width: 50vw;
+    margin: auto;
+    margin-top: 0rem;
+    padding: 2rem;
+    color: white;
+}
+
+.label_game{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.difficulty_container_game,.time_container_game{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding-left: 1rem;
+    justify-content: space-between;
+}
+.ops_container_game {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.difficulty_level_game{
+    padding: 0 4rem 0 4rem;
+    color: white;
+    height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--primary);
+    border: 2px solid var(--outline);
+    border-radius: 5px;
+    align-content: center;
+    transition: all 0.25s;
+    outline: 2px solid transparent;
+}
+.ops_level_game, .time_level_game{
+    padding: 0 4rem 0 4rem;
+    color: white;
+    height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--primary);
+    border: 2px solid var(--outline);
+    border-radius: 5px;
+    align-content: center;
+    transition: all 0.25s;
+    outline: 2px solid transparent;
+}
+
+.Active{ 
+    outline: solid 2px white;
+}
+
+.startButton_game{
+    position: relative;
+    font-size: 2rem;
+    width: 15rem;
+    height: 4rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: transparent;
+    border: none;
+    margin-top: 5rem;
+    color: white;
+    transition: all 1s;
+    
+}
+
+.startButton_game:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--outline);
+    height: 3px;
+
+}
+.startButton_game:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: var(--hover);
+    height: 100%;
+    transition: all 1s;
+    z-index: -1;
+
+}
+ 
+.startButton_game:hover:after{
+    width: 100%;
+    transition: all 1s;
+}
+
+
+.container_start_game{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+ 
+    margin-top: 5rem;
+    border-radius: 2rem;
+    background-color: var(--outline);
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+.score_game{
+    font-size: 3rem;
+}
+
+.equation_game{
+    font-size: 5rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: var(--hover);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.answer_game{
+    height: 5rem;
+    width: 80%;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.button_game{
+    height: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 3rem;
+    background-color: var(--secondary);
+    border: none;
+    box-shadow: 0 4px #2e86de ;
+    transition: transform 0.1s;
+}
+
+.stats_game{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+    padding: 2rem 0 2rem 0;
+    
+}
+
+.skip_game{
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    background-color: #fc4849;
+    box-shadow: 0px 4px 0 #ca3839  ;
+    border: none;
+    color: white;
+    transition: transform 0.1s;
+    margin-bottom: 1rem;
+}
+
+.skip_game:active, .button_game:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.bot{
+    font-size: 2rem; 
+}
+
+.footer_game{
+ padding-top: 1rem;
+ font-size: 1.5rem;
+}
+ 
+
+@keyframes moveBackground {
+    0% { background-position: 0 0, 25px 25px, 50px 50px; }
+    100% { background-position: 50px 50px, 75px 75px, 100px 100px; }
+  }

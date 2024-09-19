@@ -1,0 +1,49 @@
+.container_gameend{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 2rem;
+    background-color: var(--background);
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    outline: solid 2px var(--outline);
+    box-shadow: 0px 5px 5px 5px #38454d44;
+}
+
+.sizege{
+    font-size: 3rem;
+}
+
+.text_gameend{
+    font-size: 2rem;
+}
+
+.asset_gameend{
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.icon_gameend{
+    margin-right: 1rem;
+}
+
+.button_gameend{
+    background-color: var(--secondary);
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 0.8rem;
+    height: 5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.button_gameend:hover{
+    background-color: #1cb1f6e5;
+}
